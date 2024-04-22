@@ -2,20 +2,33 @@
 
 ## Model Description
 
-**Input:** The model inputs consist of food names and food categories. These inputs are vectorized using sklearn's `CountVectorizer`, which converts the text data into a numeric form that the model can process. This transformation allows the model to analyze the frequency of words and use this information to predict Energy (kJ) content.
+**Input:** The model inputs are vectorized representations of food names and food categories, using sklearn's `CountVectorizer`. This process transforms categorical text data into a numeric format that the model can effectively utilize for predictions.
 
-**Output:** The model outputs an estimation of the Energy content in kilojoules (kJ). This predicted value serves as an indicator of the nutritional value, specifically the calorie content, which is crucial for dietary management and meal planning.
+**Output:** The output of this model is the predicted energy content measured in kilojoules (kJ). This estimation is vital for determining the caloric content of meals, aiding in nutritional planning and dietary assessments.
 
-**Model Architecture:** The model uses an XGBRegressor, a type of gradient boosting framework that is efficient for structured data. The model was hyperparameter tuned using Optuna with the following settings: `n_estimators` set to 196, `max_depth` of 88, and a `grow_policy` of 'depthwise'. This configuration was chosen to optimize prediction accuracy and manage computational efficiency.
+**Model Architecture:** This model is based on an XGBRegressor, a gradient boosting machine learning framework optimized for performance and speed. The specific hyperparameters tuned using Optuna are:
+- `n_estimators`: 192
+- `max_depth`: 54
+- `grow_policy`: 'depthwise'
+
+These settings were selected to balance the model's ability to learn detailed data patterns without excessively increasing computational demands.
 
 ## Performance
 
-The performance of the XGBRegressor was primarily evaluated using Root Mean Square Error (RMSE) and R-squared (R2) metrics on the training data. During hyperparameter optimization (HPO), the objective was to minimize the RMSE, which resulted in a model with an RMSE of 323.864 and an impressive R2 of 0.7707, indicating that approximately 77.07% of the variance in the Energy (kJ) content is predictable from the input features.
+The XGBRegressor has demonstrated exceptional performance metrics on the training dataset:
+- **Train Accuracy**: 99.647%
+- **Train RMSE**: 37.4302
+- **MSE**: 100800
+- **RMSE**: 317.491
+- **R2**: 0.779578
+- **Variance**: 0.779653
+
+These metrics indicate a high degree of accuracy and reliability, with the model explaining approximately 77.96% of the variance in the dependent variable, suggesting strong predictive capabilities.
 
 ## Limitations
 
-While the XGBRegressor performs well on training data, its performance on unseen data needs to be thoroughly tested to ensure generalizability. The model may also be sensitive to overfitting due to the large `max_depth` used during training. Additionally, since the input features are limited to food names and categories, the model might not capture other influential factors such as cooking methods or ingredient interactions, which can affect the Energy (kJ) content of dishes.
+The primary limitation of this model is its potential for overfitting due to the very high `max_depth` used during training. While this allows the model to learn complex patterns in the training data, it may not perform as well on unseen data if those patterns do not generalize. Additionally, the model's focus on food names and categories might overlook other influential nutritional factors, possibly affecting prediction accuracy in practical scenarios.
 
 ## Trade-offs
 
-The choice of a deep and complex model like the XGBRegressor with an extensive depth and large number of estimators ensures a high level of accuracy but comes at the cost of increased computational resources and potential overfitting. While the model can capture complex nonlinear relationships in the data, it may require careful monitoring and regular updates to adapt to new data or changes in dietary trends. Moreover, the model’s complexity can make it less interpretable, which might be a drawback in applications where understanding the decision-making process is crucial. 
+Choosing an XGBRegressor with extensive depth and a significant number of estimators provides high accuracy but might require considerable computational resources. This setup also complicates the model, potentially making it less interpretable to users or stakeholders who prefer a straightforward understanding of how predictions are made. The depth of the model may also lead to challenges in maintaining and updating the model as new types of data become available.
