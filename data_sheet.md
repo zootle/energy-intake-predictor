@@ -14,11 +14,11 @@ The McCance and Widdowson's Composition of Foods Integrated Dataset (CoFID) 2021
 - Guide Public Health Policy: By offering comprehensive data on the nutritional content of foods, the dataset aids policymakers in designing public health initiatives and nutritional guidelines. This includes efforts to combat nutritional deficiencies, manage obesity rates, and promote overall public health through better dietary choices.
 - Educate and Inform: CoFID is a resource for dietitians, nutritionists, and educators who need accurate information to advise patients, clients, and students about healthy eating practices. It supports dietary planning and helps in creating educational materials that promote nutrition awareness.
 - Regulate Food Industry Practices: The dataset is used by the food industry for product development, nutritional labelling, and to ensure compliance with government regulations regarding food nutrition content and claims. This helps consumers make informed choices and promotes transparency in the food market.
-- Support Dietary Assessment Tools: It provides the data backbone for software and tools used in dietary assessment and planning. Health professionals use these tools to analyse dietary intake and offer personalized nutritional advice based on scientifically validated data.
+- Support Dietary Assessment Tools: It provides the data backbone for software and tools used in dietary assessment and planning. Health professionals use these tools to analyse dietary intake and offer personalised nutritional advice based on scientifically validated data.
 
 The dataset promotes better understanding of nutrition and its effects on health, which can lead to improved dietary choices and health outcomes.
 
-**Who created the dataset (e.g., which team, research group) and on behalf of which entity (e.g., company, institution, organization)?**
+**Who created the dataset (e.g., which team, research group) and on behalf of which entity (e.g., company, institution, organisation)?**
 
 Initially, the work on this dataset began with Dr. Robert McCance and Dr. Elsie Widdowson, who were pioneering researchers in nutrition science. Their work has been continued and expanded under the auspices of various public health and government entities.
 
@@ -34,7 +34,7 @@ Data from this work, and complementary data from other sources are published as 
 Key funding and support for the dataset have historically come from:
 
 - Public Health England (PHE): Before it was restructured, PHE was directly involved in the updating and maintenance of the dataset.
-- The Department of Health and Social Care (DHSC): As the overseeing body for PHE and its successor organizations, the DHSC has provided both funding and strategic direction for public health projects including nutritional data research.
+- The Department of Health and Social Care (DHSC): As the overseeing body for PHE and its successor organisations, the DHSC has provided both funding and strategic direction for public health projects including nutritional data research.
 - UK Food Standards Agency: In some editions and updates, the Food Standards Agency has collaborated or contributed, especially in aspects related to food safety and standards.
  
 ## Composition
@@ -159,7 +159,7 @@ The dataset is a highly regarded source for nutritional data, but like any datas
 - **Representativeness and Bias** - The dataset contains is focused on the UK, so is highly representative of that demographic and excludes dietary advice for those consuming non-Western diets. It is therefore culturally biased and consideration would be needed to supplement the dataset with additional regions and cultures for more broad applicability.
 - **Outdated information** - Nutritional data can become outdated as food manufacturing processes and ingredients change over time.
 - **Methodology** - Variations in how food components are measured (e.g., preparation methods, analytical techniques) can lead to inconsistencies or inaccuracies in the data.
-- **Generalization** - Misinterpretation of the data can occur if users generalize findings to populations or conditions outside the dataset’s scope, leading to nutritional misguidance or health risks.
+- **Generalisation** - Misinterpretation of the data can occur if users generalise findings to populations or conditions outside the dataset’s scope, leading to nutritional misguidance or health risks.
 - **Financial Risks** - Inaccurate data could lead to financial harm if used to formulate products, influence stock control, or guide business decisions in the food industry.
 
 To mitigate these issues it could be prudent to consult researchers and practitioners to consider suitability for the demographic, check for regular updates, verify the data through multiple sources, pilot test any dependant decision-making, consider the methodologies for data collection more closely and determine whether any bias might have ethical considerations.
@@ -202,4 +202,5 @@ The data is available under [Open Government Licence v3.0](https://www.nationala
 
 **Who maintains the dataset?**
 
-The McCance and Widdowson's Composition of Foods Integrated Dataset (CoFID) is maintained by Public Health England (PHE), which, following organizational changes, has now become part of the UK Health Security Agency and the Office for Health Improvement and Disparities. These agencies are responsible for updating and ensuring the accuracy of the dataset, as well as for publishing new editions and managing the dissemination of the data.
+The McCance and Widdowson's Composition of Foods Integrated Dataset (CoFID) is maintained by Public Health England (PHE), which, following organisational changes, has now become part of the UK Health Security Agency and the Office for Health Improvement and Disparities. These agencies are responsible for updating and ensuring the accuracy of the dataset, as well as for publishing new editions and managing the dissemination of the data.
+
