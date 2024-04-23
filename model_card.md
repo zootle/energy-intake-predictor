@@ -1,3 +1,5 @@
+![Predicting Energy Intake from Recipe Ingredients](assets/images/github-header.png "Predicting Energy Intake from Recipe Ingredients")
+
 # Model Card for Predicting Energy Intake from Recipe Ingredients
 
 ## Model Description
