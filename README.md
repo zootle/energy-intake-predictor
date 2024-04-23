@@ -15,7 +15,10 @@ Overall, a 78% accuracy has been achieved on predicting the calorie content, Ene
 100g, of food ingredient on a broad set of 2893 food ingredients. This is a significant step forward in 
 achieving wider goals of predicting a broader spectrum of nutritional attributes.
 
-The project consists of a Jupyter notebook, model card and datasheet. The original dataset is 
+The project consists of a [Jupyter notebook](notebook.ipynb), [model card](model_card.md) and 
+[datasheet](data_sheet.md). The 
+original 
+dataset is 
 provided alongside the permutations used for the project.
 
 ## Rationale
