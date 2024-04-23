@@ -1,6 +1,14 @@
 # Model Card for Predicting Energy Intake from Recipe Ingredients
 
+## Model Type
+
+RandomForestRegressor (scikit-learn v1.4.2)
+
 ## Model Description
+
+The RandomForestRegressor is a meta estimator that fits a number of decision tree regressors on 
+various sub-samples of 
+the dataset and uses averaging to improve the predictive accuracy and control over-fitting.
 
 **Input:** The inputs to this model include food names and food categories, which are 
 transformed into numerical representations using the `CountVectorizer` from sklearn. This 
@@ -33,8 +41,8 @@ The RandomForestRegressor has achieved strong performance:
 
 These metrics indicate that the model is highly accurate and reliable, explaining approximately 79.57% of the variance in the dependent variable. This level of performance suggests that the model can effectively predict the energy content of recipes based on the input features.
 
-When applied to more even ratios of training and testing data, this model still outperformed 
-others. 
+When applied to ratios of training and testing data with a larger test portion, the 
+RandomForestRegressor usually still outperformed others. 
 
 ## Limitations
 
@@ -45,3 +53,9 @@ Please see the [datasheet](data_sheet.md "data sheet") for more detailed informa
 ## Trade-offs
 
 The choice to use a deeply configured RandomForestRegressor ensures high accuracy but at the expense of computational efficiency and potential overfitting. The high `max_depth` and number of trees allow the model to learn detailed data intricacies but may make it less adaptable to new, unseen data without similar depth in features. Moreover, the complexity of the model may reduce its interpretability, making it difficult for users to understand the basis of its predictions without substantial domain knowledge.
+
+## Developer
+- Adam de Zoete [(@zootle)](https://github.com/zootle "Adam de Zoete (@zootle)")
+
+## Version
+Last updated: April 2024
