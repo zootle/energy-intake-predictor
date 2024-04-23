@@ -1,3 +1,5 @@
+![Predicting Energy Intake from Recipe Ingredients](assets/images/github-header.png "Predicting Energy Intake from Recipe Ingredients")
+
 # Datasheet for Predicting Energy Intake from Recipe Ingredients
 
 Please find information on the McCance and Widdowson's Composition of Foods Integrated Dataset (CoFID) dataset included in this project.
