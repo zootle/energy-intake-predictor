@@ -33,6 +33,9 @@ capabilities.
 
 The primary limitation of this model is its potential for overfitting due to the very high `max_depth` used during training. While this allows the model to learn complex patterns in the training data, it may not perform as well on unseen data if those patterns do not generalize. Additionally, the model's focus on food names and categories might overlook other influential nutritional factors, possibly affecting prediction accuracy in practical scenarios.
 
+Please see the [datasheet](data_sheet.md "data sheet") for more detailed information on the 
+dataset where various biases are discussed.
+
 ## Trade-offs
 
 Choosing an XGBRegressor with extensive depth and a significant number of estimators provides high accuracy but might require considerable computational resources. This setup also complicates the model, potentially making it less interpretable to users or stakeholders who prefer a straightforward understanding of how predictions are made. The depth of the model may also lead to challenges in maintaining and updating the model as new types of data become available.
