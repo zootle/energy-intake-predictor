@@ -7,8 +7,8 @@
 **Output:** The output of this model is the predicted energy content measured in kilojoules (kJ). This estimation is vital for determining the caloric content of meals, aiding in nutritional planning and dietary assessments.
 
 **Model Architecture:** This model is based on an XGBRegressor, a gradient boosting machine learning framework optimized for performance and speed. The specific hyperparameters tuned using Optuna are:
-- `n_estimators`: 192
-- `max_depth`: 54
+- `n_estimators`: 93
+- `max_depth`: 42
 - `grow_policy`: 'depthwise'
 
 These settings were selected to balance the model's ability to learn detailed data patterns without excessively increasing computational demands.
@@ -16,14 +16,16 @@ These settings were selected to balance the model's ability to learn detailed da
 ## Performance
 
 The XGBRegressor has demonstrated exceptional performance metrics on the training dataset:
-- **Train Accuracy**: 99.647%
-- **Train RMSE**: 37.4302
-- **MSE**: 100800
-- **RMSE**: 317.491
-- **R2**: 0.779578
-- **Variance**: 0.779653
+- **Train Accuracy**: 99.883%
+- **Train RMSE**: 40.4259
+- **MSE**: 100474
+- **RMSE**: 316.977
+- **R2**: 0.780291
+- **Variance**: 0.780765
 
-These metrics indicate a high degree of accuracy and reliability, with the model explaining approximately 77.96% of the variance in the dependent variable, suggesting strong predictive capabilities.
+These metrics indicate a high degree of accuracy and reliability, with the model explaining 
+approximately 78.07% of the variance in the dependent variable, suggesting strong predictive 
+capabilities.
 
 ## Limitations
 
