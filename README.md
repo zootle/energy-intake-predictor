@@ -44,7 +44,7 @@ commercial settings can have far-reaching benefits:
    understanding the caloric content can help in studying the impacts of various foods on human 
    health and in developing new food products that fit into healthier lifestyle choices.
 
-- **Personalized Nutrition**: With advances in personalized medicine, predicting calorie 
+- **Personalised Nutrition**: With advances in personalised medicine, predicting calorie 
    content can be part of broader efforts to tailor diets to individual genetic profiles, 
    lifestyle factors, and health goals.
 
@@ -99,7 +99,7 @@ The project is broken down into the following steps:
 9. Deploying in a sample technique
 
 During the data pre-processing phase, I have vectorized words associated with food names and groups 
-to make them more generalizable to a broader spectrum of targets. The aim of this project was to develop a machine learning model capable of adapting to a wide range of recipes and ingredients, thereby reducing its specificity to unseen data. The implementation details are shown below.
+to make them more generalisable to a broader spectrum of targets. The aim of this project was to develop a machine learning model capable of adapting to a wide range of recipes and ingredients, thereby reducing its specificity to unseen data. The implementation details are shown below.
 
 ![Word Cloud of Ingredients](assets/images/food-composition-word-cloud.png "Word Cloud of Ingredients")
 
