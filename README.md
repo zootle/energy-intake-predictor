@@ -135,14 +135,14 @@ through hundreds of iterations to find the optimum parameters.
 
 The following models were evaluated using Mean Squared Error (MSE), Root Mean Squared Error (RMSE), R-squared (R2), and Variance:
 
-|                       |   Train_Accuracy |   Train_RMSE |      MSE |    RMSE |       R2 |   Variance |
-|:----------------------|-----------------:|-------------:|---------:|--------:|---------:|-----------:|
-| Ridge                 |         0.876683 |       220.49 |   119161 | 345.197 | 0.736364 |   0.736896 |
-| LGBMRegressor         |          0.60461 |      394.813 |   174858 |  418.16 | 0.613138 |   0.613219 |
-| PLSRegressionReLU     |         0.853306 |      240.483 |   114106 | 337.796 | 0.747548 |   0.748999 |
-| RandomForestRegressor |         0.964715 |      117.943 |  92345.8 | 303.884 | 0.795691 |   0.795889 |
-| XGBRegressor          |         0.995696 |      41.1924 |  93359.7 | 305.548 | 0.793447 |    0.79366 |
-| KNeighborsRegressor   |         0.996304 |      38.1712 |   120835 | 347.614 |  0.73266 |   0.733781 |
+|                       | Train Accuracy | Train RMSE |      MSE |    RMSE |       R2 |   Variance |
+|:----------------------|---------------:|-----------:|---------:|--------:|---------:|-----------:|
+| Ridge                 |       0.876683 |     220.49 |   119161 | 345.197 | 0.736364 |   0.736896 |
+| LGBMRegressor         |        0.60461 |    394.813 |   174858 |  418.16 | 0.613138 |   0.613219 |
+| PLSRegressionReLU     |       0.853306 |    240.483 |   114106 | 337.796 | 0.747548 |   0.748999 |
+| RandomForestRegressor |       0.964715 |    117.943 |  92345.8 | 303.884 | 0.795691 |   0.795889 |
+| XGBRegressor          |       0.995696 |    41.1924 |  93359.7 | 305.548 | 0.793447 |    0.79366 |
+| KNeighborsRegressor   |       0.996304 |    38.1712 |   120835 | 347.614 |  0.73266 |   0.733781 |
 
 The following are findings related to the model evaluation:
 
