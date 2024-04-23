@@ -5,8 +5,8 @@
 ## Project Overview
 
 This project aims to investigate the feasibility of machine learning in 
-effectively predicting the calorie content or energy of ingredients used in recipes. Every year 
-millions are affected by health conditions related to diet and nutrition and often struggle to 
+effectively predicting the energy, or calorie content, of ingredients used in recipes. Every year 
+millions of people are affected by health conditions related to diet and nutrition. Research show that it is often a struggle to 
 access the right information to make informed decisions about their food choices. There are many 
 industries who are reliant on providing accurate nutritional information to consumers, yet this 
 is not always available due to the complexity of food composition and preparation.
@@ -34,7 +34,7 @@ commercial settings can have far-reaching benefits:
 
 - **Food Service Application**: Chefs and food service professionals can use calorie content 
    predictions to design meals that meet specific nutritional criteria, which is especially 
-   useful in settings like hospitals, schools, and health-focused restaurants.
+   useful in settings like hospitals, schools, and health-focused restaurants and supermarkets.
 
 - **Food Technology**: Integrating calorie prediction algorithms into apps and devices can 
    enhance the functionality of kitchen gadgets and fitness trackers, making them more useful 
@@ -49,11 +49,11 @@ commercial settings can have far-reaching benefits:
    lifestyle factors, and health goals.
 
 - **Reducing Food Waste**: Knowing the caloric value of ingredients can also aid in better 
-   managing food resources, planning meals more efficiently, and reducing waste by utilizing 
+   managing food resources, planning meals more efficiently, and reducing waste by utilising 
    ingredients appropriately according to dietary needs.
 
 Overall, the ability to predict calorie content accurately can contribute significantly to 
-health and wellness, culinary arts, consumer technology, and broader scientific research.
+health and wellness, culinary practices, consumer technology, and broader scientific research.
 
 Assistive technology such as this can be used to improve the health conditions of many around 
 the world and this project simply scratches the surface of the potential use of machine 
@@ -142,16 +142,19 @@ The following graph shows the accuracy of the models:
 
 ![Model Accuracy Comparison](assets/images/model-accuracy-R2-scores.png)
 
-Overall, there is a good level of accuracy over most of the models. The XGBoost for Regression model has stood out due to its high accuracy and low RMSE. If this overfits then the Random Forest Regressor would be the next best model to use.
+Overall, there is a good level of accuracy over most of the models. The XGBoost for Regression model has stood out due to its high accuracy and low RMSE. If this overfits on further unseen data then the Random Forest Regressor would be the next best model to use.
 
 ### Conclusion
 
-This research project utilizes advanced machine learning techniques to forecast the calorie content of various food ingredients, which is pivotal for nutrition management and public health. 
+This research project utilises advanced machine learning techniques to forecast the calorie content of various food ingredients, which is pivotal for nutrition management and public health. 
 
 Future work could explore combining models and/or feature engineering to further enhance 
-prediction and scaling to a wider range of ingredients across a larger demographic.
+prediction and scaling to a wider range of ingredients across a larger demographic. There is further scope to explore the data further, improve word classification and 
 
 ### Author
 - Adam de Zoete [(@zootle)](https://github.com/zootle)
 
+### License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
