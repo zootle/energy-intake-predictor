@@ -11,8 +11,8 @@ The McCance and Widdowson's Composition of Foods Integrated Dataset (CoFID) 2021
 - Support Nutritional Research: The dataset serves as a foundational resource for researchers studying diet, nutrition, and their impacts on health. It allows scientists to conduct studies on dietary intake, nutrient analysis, and the role of diet in disease prevention and management.
 - Guide Public Health Policy: By offering comprehensive data on the nutritional content of foods, the dataset aids policymakers in designing public health initiatives and nutritional guidelines. This includes efforts to combat nutritional deficiencies, manage obesity rates, and promote overall public health through better dietary choices.
 - Educate and Inform: CoFID is a resource for dietitians, nutritionists, and educators who need accurate information to advise patients, clients, and students about healthy eating practices. It supports dietary planning and helps in creating educational materials that promote nutrition awareness.
-- Regulate Food Industry Practices: The dataset is used by the food industry for product development, nutritional labeling, and to ensure compliance with government regulations regarding food nutrition content and claims. This helps consumers make informed choices and promotes transparency in the food market.
-- Support Dietary Assessment Tools: It provides the data backbone for software and tools used in dietary assessment and planning. Health professionals use these tools to analyze dietary intake and offer personalized nutritional advice based on scientifically validated data.
+- Regulate Food Industry Practices: The dataset is used by the food industry for product development, nutritional labelling, and to ensure compliance with government regulations regarding food nutrition content and claims. This helps consumers make informed choices and promotes transparency in the food market.
+- Support Dietary Assessment Tools: It provides the data backbone for software and tools used in dietary assessment and planning. Health professionals use these tools to analyse dietary intake and offer personalized nutritional advice based on scientifically validated data.
 
 The dataset promotes better understanding of nutrition and its effects on health, which can lead to improved dietary choices and health outcomes.
 
@@ -41,11 +41,11 @@ Key funding and support for the dataset have historically come from:
 
 The instances in the McCance and Widdowson's Composition of Foods Integrated Dataset (CoFID) represent individual food items. Each instance in the dataset provides detailed nutritional information about a specific food item commonly consumed in the UK. This information typically includes:
 
-- Macronutrients: Such as fats, proteins, and carbohydrates, including details on sugars and dietary fiber.
+- Macronutrients: Such as fats, proteins, and carbohydrates, including details on sugars and dietary fibre.
 - Micronutrients: Including vitamins and minerals.
 - Other Nutritional Components: Such as water content, alcohol, organic acids, and cholesterol.
 
-Each food item in the dataset is analyzed and recorded with comprehensive details about its nutritional composition. The purpose of these entries is to provide a reliable source of nutritional data for use in research, dietary planning, public health policymaking, and educational purposes. The dataset does not contain documents, photos, people, or countries but focuses solely on the nutritional aspects of food items.
+Each food item in the dataset is analysed and recorded with comprehensive details about its nutritional composition. The purpose of these entries is to provide a reliable source of nutritional data for use in research, dietary planning, public health policymaking, and educational purposes. The dataset does not contain documents, photos, people, or countries but focuses solely on the nutritional aspects of food items.
 
 It is made available in an MS Excel Spreadsheet, named McCance and Widdowson's composition of foods integrated dataset (Ref: PHE publications gateway number: GW-2010, MS Excel Spreadsheet, 4.42 MB)
 
@@ -77,11 +77,11 @@ An option is available to request the dataset in an accessible formats for use w
 
 **Is there any missing data?**
 
-The extent and nature of missing data can vary depending on several factors, such as the availability of information, changes in food products, and the methods used to analyze food components. 
+The extent and nature of missing data can vary depending on several factors, such as the availability of information, changes in food products, and the methods used to analyse food components. 
 
 Here are some typical scenarios where the data appears to be missing:
 
-- Limited Data on Certain Nutrients: Some nutrients might be harder to analyze or less frequently analyzed due to the cost, complexity of analysis, or because they are not a mandatory part of nutritional labeling requirements.
+- Limited Data on Certain Nutrients: Some nutrients might be harder to analyse or less frequently analysed due to the cost, complexity of analysis, or because they are not a mandatory part of nutritional labelling requirements.
 - Newly Introduced Foods: For new food products or less common ingredients, comprehensive nutritional data might not be immediately available.
 - Variability in Food Items: Natural products like fruits and vegetables can show significant variability in nutrient content depending on factors like seasonality, cultivation methods, and geographic origin. Sometimes, it might be challenging to provide precise nutrient values for every instance.
 - Updates and Revisions: As food compositions change due to factors like reformulations or new agricultural practices, previously collected data might become outdated, and there may be a lag before the dataset is updated.
@@ -129,18 +129,18 @@ The Composition of Foods series of publications in book form are listed below:
 - Sixth Summary Edition (2002)
 - Seventh Summary Edition (2015)
 
-## Preprocessing/cleaning/labelling
+## Pre-processing, cleaning and labelling
 
-**Was any preprocessing/cleaning/labeling of the data done (e.g., discretization or bucketing, tokenization, part-of-speech tagging, SIFT feature extraction, removal of instances, processing of missing values)? If so, please provide a description. If not, you may skip the remaining questions in this section.**
+**Was any pre-processing/cleaning/labelling of the data done (e.g., discretization or bucketing, tokenization, part-of-speech tagging, SIFT feature extraction, removal of instances, processing of missing values)? If so, please provide a description. If not, you may skip the remaining questions in this section.**
 
-Yes, pre-processing, cleaning, and labeling has been undertaken to ensure the accuracy, consistency, and usability of the dataset. Here are some steps that might have been involved:
+Yes, pre-processing, cleaning, and labelling has been undertaken to ensure the accuracy, consistency, and usability of the dataset. Here are some steps that might have been involved:
 
 - Cleaning and Standardisation: Outliers that are significantly different from other observations and likely due to errors in data entry or measurement might be removed or corrected. Measurements have been aligned in grams, milligrams, etc.
-- Labeling:  Foods have been grouped into categories (e.g., fruits, vegetables, meats) to facilitate analysis and usage.
-- Data Formatting: Organising the data into a format that is easy to access and analyze, such as tables with clearly defined columns for each nutrient.
+- Labelling:  Foods have been grouped into categories (e.g., fruits, vegetables, meats) to facilitate analysis and usage.
+- Data Formatting: Organising the data into a format that is easy to access and analyse, such as tables with clearly defined columns for each nutrient.
 - Handling Missing Data: Missing values might have been handled by various imputation techniques where values are estimated based on other available data.
 
-**Was the “raw” data saved in addition to the preprocessed/cleaned/labeled data (e.g., to support unanticipated future uses)?**
+**Was the “raw” data saved in addition to the pre-processed/cleaned/labelled data (e.g., to support unanticipated future uses)?**
 
 The specific data is not explicitly detailed in publicly available information, however in most scientific and nutritional databases, especially those used for ongoing research and public health monitoring, it is common practice to retain raw data. 
  
@@ -150,9 +150,9 @@ The specific data is not explicitly detailed in publicly available information, 
 
 There is significant potential to use the data for Nutritional Research and Education, Dietary Planning and Assessment, Public Health Policy and within the Food Industry for managing nutrient and dietary information.
 
-**Is there anything about the composition of the dataset or the way it was collected and preprocessed/cleaned/labeled that might impact future uses? For example, is there anything that a dataset consumer might need to know to avoid uses that could result in unfair treatment of individuals or groups (e.g., stereotyping, quality of service issues) or other risks or harms (e.g., legal risks, financial harms)? If so, please provide a description. Is there anything a dataset consumer could do to mitigate these risks or harms?**
+**Is there anything about the composition of the dataset or the way it was collected and pre-processed/cleaned/labelled that might impact future uses? For example, is there anything that a dataset consumer might need to know to avoid uses that could result in unfair treatment of individuals or groups (e.g., stereotyping, quality of service issues) or other risks or harms (e.g., legal risks, financial harms)? If so, please provide a description. Is there anything a dataset consumer could do to mitigate these risks or harms?**
 
-The dataset is a highly regarded source for nutritional data, but like any dataset, there are aspects of its composition, collection, and preprocessing that users should be aware. Here are some potential concerns:
+The dataset is a highly regarded source for nutritional data, but like any dataset, there are aspects of its composition, collection, and pre-processing that users should be aware. Here are some potential concerns:
 
 - **Representativeness and Bias** - The dataset contains is focused on the UK, so is highly representative of that demographic and excludes dietary advice for those consuming non-Western diets. It is therefore culturally biased and consideration would be needed to supplement the dataset with additional regions and cultures for more broad applicability.
 - **Outdated information** - Nutritional data can become outdated as food manufacturing processes and ingredients change over time.
@@ -168,9 +168,9 @@ While the dataset is a valuable resource for many nutritional and food-related t
 
 - **Clinical or Medical Diagnoses** - using it to directly support medical diagnoses or therapeutic interventions without considering individual patient conditions, medication interactions, and specific nutrient absorption rates can be misleading and potentially harmful.
 - **Ethnic or Regional Dietary Analysis** - Given the dataset focuses on the UK, it might not adequately represent the diversity of foods consumed globally, particularly those specific to non-Western diets or regional specialties not widely consumed in the UK.
-- **Forecasting Food Trends or Consumption Patterns** - While the dataset provides comprehensive nutritional information, it does not contain data on consumption patterns, consumer behavior, or trend analysis, which are essential for forecasting in the food industry or market research.
+- **Forecasting Food Trends or Consumption Patterns** - While the dataset provides comprehensive nutritional information, it does not contain data on consumption patterns, consumer behaviour, or trend analysis, which are essential for forecasting in the food industry or market research.
 - **Socioeconomic Studies Involving Food Security** - The dataset does not include information about food costs, accessibility, or socioeconomic factors affecting food choices, which are crucial for studies on food security and socioeconomic impacts on diet.
-- **Legal Compliance and Food Labeling Outside the UK** - Nutritional standards and labeling requirements can vary significantly by country, where it might not meet local regulatory requirements.
+- **Legal Compliance and Food Labelling Outside the UK** - Nutritional standards and labelling requirements can vary significantly by country, where it might not meet local regulatory requirements.
 
 ## Distribution
 
