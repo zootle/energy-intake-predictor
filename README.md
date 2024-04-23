@@ -11,7 +11,7 @@ access the right information to make informed decisions about their food choices
 industries who are reliant on providing accurate nutritional information to consumers, yet this 
 is not always available due to the complexity of food composition and preparation.
 
-Overall, a 78% accuracy has been achieved on predicting the calorie content, Energy (kJ) / per 
+Overall, a 79.5% accuracy has been achieved on predicting the calorie content, Energy (kJ) / per 
 100g, of food ingredient on a broad set of 2893 food ingredients. This is a significant step forward in 
 achieving wider goals of predicting a broader spectrum of nutritional attributes.
 
@@ -135,29 +135,53 @@ through hundreds of iterations to find the optimum parameters.
 
 The following models were evaluated using Mean Squared Error (MSE), Root Mean Squared Error (RMSE), R-squared (R2), and Variance:
 
-|                       | Train Accuracy | Train RMSE |    MSE |    RMSE |       R2 |   Variance |
-|:----------------------|---------------:|-----------:|-------:|--------:|---------:|-----------:|
-| Ridge                 |       0.876325 |    221.559 | 131400 | 362.491 | 0.712666 |   0.714562 |
-| LGBMRegressor         |       0.611449 |     392.71 | 178633 | 422.65  | 0.60938  |   0.610797 |
-| PLSRegressionReLU     |       0.852259 |    242.157 | 131028 | 361.977 | 0.71348  |   0.716765 |
-| RandomForestRegressor |       0.964799 |    118.202 | 114840 | 338.88  | 0.748878 |   0.748959 |
-| XGBRegressor          |       0.995883 |    40.4259 | 100474 | 316.977 | 0.780291 |   0.780765 |
-| KNeighborsRegressor   |       0.996474 |    37.4095 | 136899 | 369.999 | 0.70064  |   0.701494 |
+|                       |   Train_Accuracy |   Train_RMSE |      MSE |    RMSE |       R2 |   Variance |
+|:----------------------|-----------------:|-------------:|---------:|--------:|---------:|-----------:|
+| Ridge                 |         0.876683 |       220.49 |   119161 | 345.197 | 0.736364 |   0.736896 |
+| LGBMRegressor         |          0.60461 |      394.813 |   174858 |  418.16 | 0.613138 |   0.613219 |
+| PLSRegressionReLU     |         0.853306 |      240.483 |   114106 | 337.796 | 0.747548 |   0.748999 |
+| RandomForestRegressor |         0.964715 |      117.943 |  92345.8 | 303.884 | 0.795691 |   0.795889 |
+| XGBRegressor          |         0.995696 |      41.1924 |  93359.7 | 305.548 | 0.793447 |    0.79366 |
+| KNeighborsRegressor   |         0.996304 |      38.1712 |   120835 | 347.614 |  0.73266 |   0.733781 |
 
-The following finding as a result of the model evaluation:
+The following are findings related to the model evaluation:
 
-- **Ridge Regression**: Decent R2 and variance, but higher RMSE and MSE compared to other models.
-- **LGBMRegressor**: Good performance across all metrics, lower RMSE and MSE than Ridge, and decent R2.
-- **PLSRegressionReLU**: Lower performance in accuracy and higher RMSE and MSE than some other models, though R2 and variance are reasonable.
-- **RandomForestRegressor**: Excellent performance in terms of RMSE and MSE, and the highest R2 and variance, showing strong predictive power and consistency.
-- **XGBRegressor**: Outstanding performance with the lowest RMSE and MSE, and the highest R2 and variance, suggesting excellent predictive accuracy and consistency.
-- **KNeighborsRegressor**: Despite having the same high train accuracy and low RMSE as XGBRegressor, it has a significantly higher MSE and the lowest R2 and variance, indicating potential issues in generalizing.
+1. **Ridge Regression**:
+   - Moderate training accuracy
+   - Moderate RMSE values on both training and test data
+   - Good (R2) score, indicating a decent amount of variance explained
 
-The following graph shows the accuracy of the models:
+2. **LGBMRegressor**:
+   - Lower training accuracy
+   - Higher RMSE values, indicating larger errors
+   - Lower (R2) score, which shows it explains less variance relative to other models
+
+3. **PLSRegressionReLU**:
+   - High training accuracy
+   - Moderate RMSE values
+   - Very good (R2) score, indicating that it explains a substantial amount of variance
+
+4. **RandomForestRegressor**:
+   - Very high training accuracy
+   - Lowest RMSE values among all models, showing smaller prediction errors
+   - The highest (R2) score, indicating the best performance in terms of explaining variance
+
+5. **XGBRegressor**:
+   - Extremely high training accuracy
+   - Very low training RMSE but slightly higher test RMSE compared to RandomForestRegressor
+   - High (R2) score, similar to RandomForestRegressor but slightly lower
+
+6. **KNeighborsRegressor**:
+   - Highest training accuracy
+   - Very low training RMSE but higher test RMSE, indicating possible overfitting
+   - Lower (R2) score compared to RandomForestRegressor and XGBRegressor
+
+The following graph shows the Accuracy against R2 score of the models:
 
 ![Model Accuracy Comparison](assets/images/model-accuracy-R2-scores.png "Model Accuracy Comparison")
 
-Overall, there is a good level of accuracy over most of the models. The XGBoost for Regression model has stood out due to its high accuracy and low RMSE. If this overfits on further unseen data then the Random Forest Regressor would be the next best model to use.
+Overall, there is a good level of accuracy from most of the models. The **RandomForestRegressor** 
+appears to be the best choice based on its exceptionally high accuracy, the lowest error metrics (RMSE and MSE), and the highest R2. XGBRegressor is a close second, with excellent performance across all metrics, but slightly lower accuracy and would be a good choice in the case of overfitting.
 
 Please see this [model card](model_card.md "model card") for more detailed information on the final 
 model used within this project.
